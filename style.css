@@ -140,6 +140,7 @@ li {
   list-style-position: inside;
   transition: .5s;
   word-wrap: break-word;
+  cursor: default;
 }
 
 li:hover {
