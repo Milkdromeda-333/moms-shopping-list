@@ -1,0 +1,148 @@
+:root {
+  --pink: #f23de9;
+  --dark-pink: #cf30c7;
+  --green: #42f587;
+  --dark-green: #39db77;
+  --yellow: #ecf54c;
+  --cursive: 'Homemade Apple', cursive;
+  --regular: 'Reenie Beanie', cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./blurry-gradient-haikei.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: var(--cursive);
+  padding: 10px;
+
+
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+
+}
+
+input,
+h1 {
+  width: 100%;
+}
+
+h1 {
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+input {
+  height: 36px;
+  margin: 10px 0;
+  caret-color: var(--dark-pink);
+  font-family: var(--cursive);
+  border-width: 2px;
+  padding: 5px;
+}
+
+input:focus {
+  outline: 2px solid var(--dark-pink);
+}
+
+input::placeholder {
+  padding-left: 6px;
+}
+
+/*Buttons*/
+button {
+  width: 70px;
+  height: 30px;
+  border: none;
+  font-family: var(--regular);
+  font-size: 25px;
+}
+
+
+.submitBtn {
+  background-color: white;
+}
+
+.resetBtn {
+  background-color: black;
+  color: white;
+  margin-left: 10px;
+}
+
+.resetBtn:hover {
+  color: red;
+  border: 1px solid white;
+
+}
+
+.submitBtn:hover {
+  color: var(--pink);
+  border: 1px solid black;
+}
+
+footer {
+  position: absolute;
+  top: 93%;
+  font-family: var(--regular);
+  font-size: 30px;
+}
+
+footer button {
+  background-color: black;
+  color: white;
+  height: 35px;
+}
+
+footer button:hover {
+  border: 3px solid white;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-items: stretch;
+  gap: 15px;
+  width: 50%;
+}
+
+/* List */
+ul {
+  position: relative;
+  padding: 30px;
+  margin-top: 10px;
+  min-height: 200px;
+}
+
+ul:after {
+  content: " ";
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+li {
+  list-style-image: url(https://img.icons8.com/fluency-systems-regular/20/000000/circled-x.png);
+  list-style-position: inside;
+  transition: .5s;
+  word-wrap: break-word;
+}
+
+li:hover {
+  transform: translate(10px);
+  color: red;
+}
