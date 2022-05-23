@@ -9,12 +9,6 @@ let myPlaceHolder = document.querySelector("#placeholder");
 
 // my global event listeners
 
-/*let myPlaceHolder = document.createElement("p");
-myPlaceHolder.textContent = "You have nothing in your list at the moment";
-list.append(myPlaceHolder);
-if (list.children.length = 0) {
-  myPlaceHolder.remove();
-}*/
 submitBtn.addEventListener("click", function (event) {
   event.preventDefault();
   myPlaceHolder.remove();
